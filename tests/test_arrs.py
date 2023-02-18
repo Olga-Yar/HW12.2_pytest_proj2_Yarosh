@@ -22,3 +22,6 @@ def test_slice_empty():
 def test_slice_negative_start():
     assert arrs.my_slice([1, 2, 3, 4], -1) == [4]
 
+
+def test_slice_less_length_start():
+    assert arrs.my_slice([1, 2, 3, 4], -5) == [1, 2, 3, 4]
